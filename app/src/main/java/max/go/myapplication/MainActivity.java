@@ -28,16 +28,9 @@ public class MainActivity extends AppCompatActivity {
         };
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.toolbar, MainToolbarFragment.newInstance())
-                    .commitNow();
+            buildFragments(0);
         }else if(true){
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, MusicFragment.newInstance())
-                    .commitNow();
+            buildFragments(1);
         }
         for (int i = 0; i < buttonsFragments.length; i++) {
             buttonsFragments[i].setOnClickListener(buttonsFragmentsOnClickListener);
