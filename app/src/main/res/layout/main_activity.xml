@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"  android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GridLayout
+        android:background="@color/colorBackgroundGrey"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:context=".MainActivity" />
+
+    </GridLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:context=".MainActivity" />
+
+    <GridLayout
+        android:id="@+id/gridlayout_buttons_to_fragments"
+        android:background="@color/colorBackgroundWhite2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:columnCount="5">
+
+        <ImageButton
+            android:id="@+id/button_fragment_0"
+            android:src="@android:drawable/menu_frame"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_columnWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button_fragment_1"
+            android:src="@android:drawable/arrow_up_float"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_columnWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button_fragment_2"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_columnWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button_fragment_3"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_columnWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button_fragment_4"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+</LinearLayout>
+
