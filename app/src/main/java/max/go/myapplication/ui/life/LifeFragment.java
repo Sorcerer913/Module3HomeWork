@@ -32,7 +32,7 @@ public class LifeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return new Surface(super.getContext()).getRootView();
+        return new Surface(super.getContext());
         //return inflater.inflate( R.layout.life_fragment, container, false );
     }
 
