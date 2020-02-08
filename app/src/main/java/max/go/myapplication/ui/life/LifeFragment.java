@@ -19,9 +19,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import max.go.myapplication.R;
-import max.go.myapplication.ui.music.MusicFragment;
 
 public class LifeFragment extends Fragment {
+
     private LifeViewModel lViewModel;
 
     public static LifeFragment newInstance() {
@@ -32,7 +32,8 @@ public class LifeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate( R.layout.life_fragment, container, false );        //TODO:     Surface (insert here)
+        return new Surface(super.getContext()).getRootView();
+        //return inflater.inflate( R.layout.life_fragment, container, false );
     }
 
     @Override
@@ -64,7 +65,7 @@ class Surface extends SurfaceView implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        new DrawThread(holder).start();
+        new drawThread(holder).start();
 
     }
 
@@ -78,12 +79,12 @@ class Surface extends SurfaceView implements SurfaceHolder.Callback {
 
     }
 
-    class DrawThread extends Thread {
+    class drawThread extends Thread {
         private SurfaceHolder surfaceHolder;
         private volatile boolean running = true;
         Paint paint = new Paint();
 
-        public DrawThread(SurfaceHolder surfaceHolder) {
+        public drawThread(SurfaceHolder surfaceHolder) {
             this.surfaceHolder = surfaceHolder;
         }
 

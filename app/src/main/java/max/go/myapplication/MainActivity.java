@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import max.go.myapplication.ui.life.LifeFragment;
 import max.go.myapplication.ui.main.MainFragment;
 import max.go.myapplication.ui.main.MainToolbarFragment;
 import max.go.myapplication.ui.music.MusicFragment;
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
                         .commitNow();
                 break;
             case 2:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, LifeFragment.newInstance())
+                        .commitNow();
                 break;
             case 3:
                 break;
