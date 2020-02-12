@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import max.go.myapplication.ui.fractal.FractalFragment;
-import max.go.myapplication.ui.life.LifeFragment;
 import max.go.myapplication.ui.main.MainFragment;
 import max.go.myapplication.ui.main.MainToolbarFragment;
 import max.go.myapplication.ui.music.MusicFragment;
@@ -57,13 +56,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 2:
                 getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.container, LifeFragment.newInstance())
+                        .replace(R.id.container, FractalFragment.newInstance())
                         .commitNow();
                 break;
             case 3:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.container, FractalFragment.newInstance())
-                        .commitNow();
+
                 break;
             case 4:
                 break;

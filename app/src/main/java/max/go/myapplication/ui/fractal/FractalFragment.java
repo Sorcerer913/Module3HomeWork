@@ -24,8 +24,8 @@ public class FractalFragment extends Fragment {
 
     private FractalViewModel fractalViewModel;
 
-    public static max.go.myapplication.ui.fractal.FractalFragment newInstance() {
-        return new max.go.myapplication.ui.fractal.FractalFragment();
+    public static FractalFragment newInstance() {
+        return new FractalFragment();
     }
 
     @Nullable

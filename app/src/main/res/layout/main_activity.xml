@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <GridLayout
-        android:background="@color/colorBackgroundGrey"
+        android:background="@color/colorBackground3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="start">
@@ -28,13 +28,14 @@
 
     <GridLayout
         android:id="@+id/gridlayout_buttons_to_fragments"
-        android:background="@color/colorBackgroundWhite2"
+        android:background="@color/colorBackground2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:columnCount="5">
 
         <ImageButton
             android:id="@+id/button_fragment_0"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:src="@android:drawable/menu_frame"
             android:layout_height="match_parent"
             android:layout_column="0"
@@ -42,6 +43,7 @@
 
         <ImageButton
             android:id="@+id/button_fragment_1"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:src="@android:drawable/arrow_up_float"
             android:layout_height="match_parent"
             android:layout_column="1"
@@ -49,18 +51,22 @@
 
         <ImageButton
             android:id="@+id/button_fragment_2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:src="@android:drawable/menu_frame"
             android:layout_height="match_parent"
             android:layout_column="2"
             android:layout_columnWeight="1" />
 
         <ImageButton
             android:id="@+id/button_fragment_3"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_height="match_parent"
             android:layout_column="3"
             android:layout_columnWeight="1" />
 
         <ImageButton
             android:id="@+id/button_fragment_4"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_height="match_parent"
             android:layout_column="4"
             android:layout_columnWeight="1" />
