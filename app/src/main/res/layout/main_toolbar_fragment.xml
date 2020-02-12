@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground2">
     <ImageButton
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@android:style/Widget.Material.Button.Borderless"
         android:id="@+id/main_first_tool_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="start"/>
     <Button
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@android:style/Widget.Material.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
@@ -22,7 +22,7 @@
 
     <ImageButton
         android:id="@+id/main_last_tool_btn"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@android:style/Widget.Material.Button.Borderless"
         android:src="@android:drawable/btn_radio"
         android:layout_width="50dp"
         android:layout_height="50dp"
