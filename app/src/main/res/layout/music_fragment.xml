@@ -30,31 +30,36 @@
 
 
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@android:style/Widget.Material.Button.Borderless"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_column="0"/>
+
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@android:style/MediaButton.Previous"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_column="1"/>
+
+            <!--android:onClick="playPause"-->
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@android:style/MediaButton.Pause"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_column="2"/>
+
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@android:style/MediaButton.Next"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_column="3"/>
+
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@android:style/Widget.Material.Button.Borderless"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:layout_columnWeight="1"
